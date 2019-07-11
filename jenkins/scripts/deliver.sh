@@ -8,11 +8,13 @@ echo '****************************************'
 echo '****************************************'
 echo '****************************************'
 echo '****************************************'
-pwd
-# cd ..
+cd /mnt/deployments/simple-node-js-react-npm-release/
 pwd
 ls
-
+set -x
+git pull origin master
+npm install — production
+set +x
 
 echo 'The following "npm" command builds your Node.js/React application for'
 echo 'production in the local "build" directory (i.e. within the'
